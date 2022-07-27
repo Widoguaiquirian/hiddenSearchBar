@@ -90,3 +90,17 @@ a {
   transform: translateX(440px) rotate(360deg);
   border-radius: 0 10px 10px 0;
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .container.active .input {
+    width: 320px;
+  }
+  .container.active .btn {
+    transform: translateX(260px) rotate(360deg);
+    border-radius: 0 10px 10px 0;
+  }
+}
