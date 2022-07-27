@@ -1,0 +1,92 @@
+/* Created XX April XXXX
+Last update April XX:  */
+
+:root {
+  --zI-1: 1;
+  --zI-2: 2;
+  --zI-3: 3;
+  --zI-4: 4;
+  --zI-5: 5;
+
+  /* --z-nav: var(--zI-2); 100 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--- General ---*/
+
+html {
+  font-size: 62.5%;
+  background: linear-gradient(90deg, #7d5fff, #bab8c2);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-size: 1.6rem;
+}
+
+.container {
+  position: relative;
+  height: 60px;
+}
+
+.input {
+  height: 60px;
+  width: 60px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 2rem;
+  outline: none;
+  transition: width 0.4s ease;
+}
+
+.btn {
+  height: 60px;
+  border: none;
+  outline: none;
+  width: 60px;
+  background-color: rgb(22, 54, 102);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.8rem;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.fa-search {
+  color: white;
+}
+
+.container.active .input {
+  width: 500px;
+}
+.container.active .btn {
+  transform: translateX(440px) rotate(360deg);
+  border-radius: 0 10px 10px 0;
+}
